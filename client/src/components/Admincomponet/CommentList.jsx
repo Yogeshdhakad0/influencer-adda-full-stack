@@ -56,7 +56,7 @@ console.log(comments)
             <div className="flex items-center gap-3">
               <User size={18} className="text-blue-400" />
               <span className="text-sm font-semibold">
-                {comment.user?.name || 'Unknown User'}  ///
+                {comment.user?.name || 'Unknown User'} 
 
               </span>
             </div>
@@ -72,9 +72,12 @@ console.log(comments)
           </div>
 
           {/* Influencer */}
+          {
+            console.log()
+          }
           <div className="flex items-center gap-2 text-gray-300 mb-2">
             <Star size={16} className="text-yellow-400" />
-            <span>{comment.influencer?.name || 'Unknown Influencer'}</span>
+            <span><span className='font-bold'>Influencer:</span> {comment?.booking?.influencer?.name || 'Unknown Influencer'}</span>
           </div>
 
           {/* Main Comment */}

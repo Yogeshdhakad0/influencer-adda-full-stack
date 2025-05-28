@@ -304,6 +304,7 @@ if( bookingSuccess){
         alt={comment.user.name}
         className="w-10 h-10 rounded-xl object-cover"
       />
+      
       <div className="flex-1">
         <div className="flex justify-between items-start">
           <h3 className="font-semibold text-purple-200">{comment.user.name}</h3>
