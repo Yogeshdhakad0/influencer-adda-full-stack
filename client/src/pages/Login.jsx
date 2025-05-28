@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { Mail, Lock } from 'lucide-react';
 import { toast } from 'react-toastify';
-import { AuthLogin } from '../features/Auth/Authslice';
+import { AuthLogin } from '../features/Auth/authslice';
 import { useDispatch, useSelector } from 'react-redux';
 
 const Login = () => {
