@@ -5,13 +5,16 @@
 
 import React, { useEffect, useState } from 'react';
 import {
-
+  Instagram,
+  Twitter,
+  Facebook,
   Mail,
   Calendar,
   MapPin,
   Users,
   Link,
   Send,
+  ThumbsUp,
   MessageCircle,
   Search,
   Filter,
