@@ -2,14 +2,14 @@ import axios from "axios"
 const BaseUrl="https://influencer-adda-full-stack.onrender.com"
 const Registerservice= async(formdata)=>{
 
-    const response = await axios.post(`${BaseUrl}api/auth/register`,formdata);
+    const response = await axios.post(`${BaseUrl}/api/auth/register`,formdata);
     console.log(response.data)
     localStorage.setItem('user',JSON.stringify(response.data))
     return response.data
 }
 
 const Loginservice= async(formdata)=>{
-    const response = await axios.post(`${BaseUrl}api/auth/login`,formdata)
+    const response = await axios.post(`${BaseUrl}/api/auth/login`,formdata)
     localStorage.setItem('user',JSON.stringify(response.data))
 
     return response.data

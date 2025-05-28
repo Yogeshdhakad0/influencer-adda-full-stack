@@ -63,7 +63,7 @@ const createnewinfluencers =async(fromdata,token)=>{
             authorization : `Bearer ${token}`,
         }
     }
-    const response = await axios.post("/api/admin/influencer",fromdata,options)
+    const response = await axios.post(`${BaseUrl}/api/admin/influencer`,fromdata,options)
     console.log(response.data)
     return response.data
 }
@@ -79,7 +79,7 @@ const updateinfluencers =async(fromdata,token)=>{
         }
     }
   
-    const response = await axios.put(`/api/admin/influencer/`+fromdata._id,fromdata,options)
+    const response = await axios.put(`${BaseUrl}/api/admin/influencer/`+fromdata._id,fromdata,options)
     // console.log(response.data)
     return response.data
 }
@@ -93,7 +93,7 @@ const deteleinfluencers =async(id,token)=>{
         }
     }
     // console.log(fromdata._id)
-    const response = await axios.delete(`/api/admin/influencer/`+ id,options)
+    const response = await axios.delete(`${BaseUrl}/api/admin/influencer/`+ id,options)
     // console.log(response.data)
     return response.data
 }
@@ -109,7 +109,7 @@ const updatabookinng =async(formdata,token)=>{
         }
     }
     console.log(formdata)
-    const response = await axios.put(`/api/admin/bookings/${formdata.id}`, { status: formdata.value }, options)
+    const response = await axios.put(`${BaseUrl}/api/admin/bookings/${formdata.id}`, { status: formdata.value }, options)
     console.log(response.data)
     return response.data
 }
@@ -124,7 +124,7 @@ const addcommnet =async(formdata,token)=>{
         }
     }
     console.log(formdata)
-    const response = await axios.post(`/api/bookings/${formdata._id}/comment`, formdata, options)
+    const response = await axios.post(`${BaseUrl}/api/bookings/${formdata._id}/comment`, formdata, options)
     console.log(response.data)
     return response.data
 }
