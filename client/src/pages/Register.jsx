@@ -5,7 +5,7 @@ import { Link, useNavigate, } from 'react-router-dom';
 // import { AuthRegister } from '../features/Auth/Authslice';
 import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
-import { AuthRegister } from '../features/Auth/Authslice';
+import { AuthRegister } from '../features/Auth/authslice';
 
 const Register = () => {
 
