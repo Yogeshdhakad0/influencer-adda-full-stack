@@ -1,37 +1,3 @@
-// import React from 'react';
-// import { useSelector } from 'react-redux';
-
-// const UserList = () => {
-
-//   const {Users,isLoadin,isSuccess,isError,Message}=useSelector(state=>state.admin)
-
-//   return (
-//     <div className="overflow-x-auto">
-//       <table className="w-full text-white">
-//         <thead>
-//           <tr className="bg-gray-800/50">
-//             <th className="p-4 text-left">Name</th>
-//             <th className="p-4 text-left">Email</th>
-//             <th className="p-4 text-left">Join Date</th>
-//             <th className="p-4 text-left">phone</th>
-//           </tr>
-//         </thead>
-//         <tbody>
-//           {Users.map(user => (
-//             <tr key={user.id} className="border-b border-gray-700/50">
-//               <td className="p-4">{user.name}</td>
-//               <td className="p-4">{user.email}</td>
-//               <td className="p-4">{new Date(user.updatedAt).toLocaleDateString()}              </td>
-//               <td className="p-4">{user.phone}</td>
-//             </tr>
-//           ))}
-//         </tbody>
-//       </table>
-//     </div>
-//   );
-// };
-
-// export default UserList;
 
 import React from 'react';
 import { useSelector } from 'react-redux';

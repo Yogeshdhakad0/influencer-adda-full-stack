@@ -1,15 +1,15 @@
 import axios from "axios"
-
+const BaseUrl="https://influencer-adda-full-stack.onrender.com"
 const Registerservice= async(formdata)=>{
 
-    const response = await axios.post('api/auth/register',formdata);
+    const response = await axios.post(`${BaseUrl}api/auth/register`,formdata);
     console.log(response.data)
     localStorage.setItem('user',JSON.stringify(response.data))
     return response.data
 }
 
 const Loginservice= async(formdata)=>{
-    const response = await axios.post('api/auth/login',formdata)
+    const response = await axios.post(`${BaseUrl}api/auth/login`,formdata)
     localStorage.setItem('user',JSON.stringify(response.data))
 
     return response.data
@@ -26,7 +26,7 @@ const Loginservice= async(formdata)=>{
 
 const updateservice = async (formdata) => {
     try {
-      const response = await axios.post('/api/auth/update', formdata);
+      const response = await axios.post(`${BaseUrl}/api/auth/update`, formdata);
       localStorage.setItem('user', JSON.stringify(response.data));
       return response.data
     } catch (error) {

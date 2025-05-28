@@ -1,36 +1,4 @@
-// import React from 'react';
-// import { Users, UserPlus, MessageSquare, Calendar } from 'lucide-react';
 
-// const AdminSidebar = ({ activeTab, setActiveTab }) => {
-//   const tabs = [
-//     { key: 'influencers', label: 'Influencers', icon: <Users size={20} /> },
-//     { key: 'users', label: 'Users', icon: <UserPlus size={20} /> },
-//     { key: 'bookings', label: 'Bookings', icon: <Calendar size={20} /> },
-//     { key: 'comments', label: 'Comments', icon: <MessageSquare size={20} /> },
-//   ];
-
-//   return (
-//     <div className="w-64 bg-gray-800/30 backdrop-blur-md min-h-screen p-4">
-//       <h2 className="text-2xl font-bold text-white mb-8">Admin Dashboard</h2>
-//       <nav className="space-y-2">
-//         {tabs.map(tab => (
-//           <button
-//             key={tab.key}
-//             onClick={() => setActiveTab(tab.key)}
-//             className={`w-full flex items-center gap-3 px-4 py-2 rounded-lg transition ${
-//               activeTab === tab.key ? 'bg-pink-500 text-white' : 'text-gray-400 hover:bg-gray-700/50'
-//             }`}
-//           >
-//             {tab.icon}
-//             <span>{tab.label}</span>
-//           </button>
-//         ))}
-//       </nav>
-//     </div>
-//   );
-// };
-
-// export default AdminSidebar;
 import React from 'react';
 import { Users, UserPlus, MessageSquare, Calendar, Dessert, Home } from 'lucide-react';
 

@@ -1,12 +1,12 @@
 import axios from "axios"
 
-
+const BaseUrl="https://influencer-adda-full-stack.onrender.com"
 
 
 ///get all influencers
 const getallInfluencersforadmin=async()=>{
 
-    const response =await axios.get('/api/influencer')
+    const response =await axios.get(`${BaseUrl}/api/influencer`)
     //   console.log(response.data)
     return response.data
 }
@@ -22,7 +22,7 @@ const getalluserforadmin=async(token)=>{
             }
         }
      
-        const response =await axios.get(`/api/admin/users`,options)
+        const response =await axios.get(`${BaseUrl}/api/admin/users`,options)
         //   console.log(response.data)
         return response.data
     }
@@ -35,7 +35,7 @@ const getallbookingforadmin=async(token)=>{
         }
     }
 
-    const response =await axios.get(`/api/admin/bookings`,options)
+    const response =await axios.get(`${BaseUrl}/api/admin/bookings`,options)
 //    console.log(response.data)
     return response.data
 }
@@ -48,7 +48,7 @@ const getallcommentforadmin =async(token)=>{
             authorization : `Bearer ${token}`,
         }
     }
-    const response = await axios.get(`/api/admin/comment`,options)
+    const response = await axios.get(`${BaseUrl}/api/admin/comment`,options)
     // console.log(response.data)
     return response.data
 }

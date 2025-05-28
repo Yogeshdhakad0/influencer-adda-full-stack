@@ -1,7 +1,7 @@
 import axios from "axios"
 
 
-
+const BaseUrl="https://influencer-adda-full-stack.onrender.com"
 
  
 
@@ -15,7 +15,7 @@ const fetchAllBookingForUser=async(token)=>{
         }
     }
     
-    const response =await axios.get('/api/bookings',options)
+    const response =await axios.get(`${BaseUrl}/api/bookings`,options)
     //   console.log(response.data)
     
     return response.data
@@ -34,7 +34,7 @@ const AddBookingForUser=async( id,token)=>{
     }
    
     
-    const response =await axios.post(`/api/bookings/${id}`,{},options)
+    const response =await axios.post(`${BaseUrl}/api/bookings/${id}`,{},options)
     //   console.log(response.data)
       console.log('add booking')
     return response.data
